@@ -23,9 +23,9 @@ setup_args = dict(
 
 install_requires = [
     'numpy',
-    'sklearn'
-    'matplotlib'
-    'scipy'
+    'sklearn',
+    'matplotlib',
+    'scipy',
     'libsvm'
 ]
 
