@@ -7,9 +7,17 @@ import scipy.io
 import itertools
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.svm import SVC, SVR
-from PMKLpy.KernelFunctions import Kernel, makeK, TKtest
-from PMKLpy.Optimization import findAlpha, findP
-from PMKLpy.Transformation import monomials
+from PMKL import KernelFunctions
+from PMKL import Optimization
+from PMKL import Transformation
+
+Kernel = KernelFunctions.Kernel
+makeK  = KernelFunctions.makeK
+TKtest = KernelFunctions.TKtest
+
+findP     = Optimization.findP
+findAlpha = Optimization.findAlpha
+monomials = Transformation.monomials
 
 class PMKL():
     def __init__(self, C = 10,  degree = 1, bound = 0.1, epsilon = 0.1, maxit = 100, tol = 1.e-6, probability = False, to_print= True):

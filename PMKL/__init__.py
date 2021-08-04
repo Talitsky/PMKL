@@ -7,5 +7,5 @@ __all__ = [
     'PMKL',
     'Transformation',
     'Optimization',
-    'KernelFunctions', 
+    'KernelFunctions'
 ]

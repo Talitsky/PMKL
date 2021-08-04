@@ -3,8 +3,9 @@ import itertools
 import math
 from matplotlib import pyplot as plt
 from libsvm import svmutil
-from PMKLpy.KernelFunctions import makeK
+from PMKL import KernelFunctions
 
+makeK  = KernelFunctions.makeK
 
 def findAlpha(SVM, Kernel):
     '''

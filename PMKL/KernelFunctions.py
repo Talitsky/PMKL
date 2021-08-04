@@ -3,8 +3,9 @@ import itertools
 import math
 from matplotlib import pyplot as plt
 from libsvm import svmutil
-from PMKLpy.Transformation import monomials
+from PMKL import Transformation
 
+monomials = Transformation.monomials
 
 class Kernel():
     '''
