@@ -7,8 +7,8 @@ with open('HISTORY.md') as history_file:
     HISTORY = history_file.read()
 
 setup_args = dict(
-    name='pyPMKL',
-    version='0.1.5',
+    name='PMKLpy',
+    version='0.1.3',
     description='Tessellated Kernels SVM',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,
@@ -18,7 +18,7 @@ setup_args = dict(
     author_email='atalitck@asu.edu',
     keywords=['Kernel learning', 'SVM', 'Multiple Kernel Learning'],
     url='https://github.com/Talitsky/PMKL',
-    download_url='https://pypi.org/project/pyPMKL/'
+    download_url='https://pypi.org/project/PMKLpy/'
 )
 
 install_requires = [
